@@ -1,4 +1,33 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+/* Selector de etiqueta header-section - article - nav*/
 header
 {
-    background: red !important;
+    background: pink;
+    color: red;
 }
+
+/* Selector descendente header-section - article - nav*/
+/* body header div nav ol li a */
+/* body header div nav ol li a
+{
+    background: red;
+} */
+
+/* Selector de clase: creamos la clase como 
+un atributo por ejemplo class="link*, para seleccionar 
+una clase .link*/
+/* link */
+
+/* En el caso de querer seleccionar un id se lo realiza
+con un hash # */
+
+#portafolio
+{
+    background: #777777;
+}
+
