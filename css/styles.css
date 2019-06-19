@@ -5,11 +5,11 @@ propiedades
 valores */
 
 /* Selector de etiqueta header-section - article - nav*/
-header
+/* header
 {
     background: pink;
     color: red;
-}
+} */
 
 /* Selector descendente header-section - article - nav*/
 /* body header div nav ol li a */
@@ -26,8 +26,46 @@ una clase .link*/
 /* En el caso de querer seleccionar un id se lo realiza
 con un hash # */
 
-#portfolio
+/* #portfolio
 {
     background: #777777;
+} */
+
+body
+{
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+h1
+{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+}
+
+.hero
+{
+    height: 300px;
+}
+
+.project_details
+{
+    width: 500px;
+    height: 200px;
+}
+
+.project_imageWrapper
+{
+    width: 500px;
+}
