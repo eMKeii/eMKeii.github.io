@@ -31,9 +31,19 @@ con un hash # */
     background: #777777;
 } */
 
+/* Colorers del proyecto
+body1: #122D43
+body 2: #252524
+header: #191919
+Textos:#122D43 
+Alt: #030504
+Gold:  
+*/
+
 body
 {
     font-family: Lato, Arial, Helvetica, sans-serif;
+    /* background-color: #252524; */
 }
 
 h1,
@@ -45,6 +55,7 @@ h6
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
+    color: #89623D;
 }
 
 h1
@@ -52,11 +63,44 @@ h1
     font-size: 40px;
     line-height: 1.5em;
     letter-spacing: -.2px;
+    color: whitesmoke;
+
 }
+
+h1 strong
+{
+    color: #89623D
+}
+
+/* p
+{
+    color: #eaeaea;
+} */
 
 .hero
 {
     height: 300px;
+    background-image: url('../images/hero.jpg');
+    background-color: #191919;
+    background-size: 500px 400px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+
+}
+
+.project
+{
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-left: 10px solid orange;
+    border-bottom: 10px solid pink; */
+    /* Otra forma de colocar bordes */
+    /* border-top-color: red;
+    border-top-width: 15px;
+    border-top-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+
 }
 
 .project_details
@@ -68,4 +112,16 @@ h1
 .project_imageWrapper
 {
     width: 500px;
+}
+
+.header 
+{
+    background-color: #191919;
+    color: whitesmoke;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none; 
 }
