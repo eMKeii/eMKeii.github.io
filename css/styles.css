@@ -1,50 +1,87 @@
-/* reglas
-selectores
-declaraciones
-propiedades
-valores */
-
-/* Selector de etiqueta header-section - article - nav*/
-/* header
-{
-    background: pink;
-    color: red;
-} */
-
-/* Selector descendente header-section - article - nav*/
-/* body header div nav ol li a */
-/* body header div nav ol li a
-{
-    background: red;
-} */
-
-/* Selector de clase: creamos la clase como 
-un atributo por ejemplo class="link*, para seleccionar 
-una clase .link*/
-/* link */
-
-/* En el caso de querer seleccionar un id se lo realiza
-con un hash # */
-
-/* #portfolio
-{
-    background: #777777;
-} */
-
 /* Colorers del proyecto
 body1: #122D43
 body 2: #252524
 header: #191919
 Textos:#122D43 
 Alt: #030504
-Gold:  
+Gold: #89623D
 */
-
+/* Estilos del header*/
 body
 {
     font-family: Lato, Arial, Helvetica, sans-serif;
      background-color: #252524; 
+     margin: 0;
 }
+
+.header 
+{
+    background-color: #191919;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row;*/
+    justify-content: space-between; 
+    height: 60px;
+}
+
+.menu
+{
+    height: inherit;
+}
+
+.header ol
+{
+    display: flex;
+    height: inherit;
+
+}
+
+.header ol li
+{
+    height: inherit;
+    display: flex;
+    
+}
+
+.header a
+{
+    display: flex;
+    padding: 0px 25px;
+    height: inherit;
+    align-items: center;
+}
+
+figure
+{
+    margin: 0;
+}
+
+ol, ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.link
+{
+    align-self: flex-start;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none; 
+}
+
+
+/* .link
+{
+    margin: 5px;
+    flex-wrap: wrap;
+} */
 
 h1,
 h2,
@@ -64,6 +101,7 @@ h1
     line-height: 1.5em;
     letter-spacing: -.2px;
     color: whitesmoke;
+    margin: 0;
 
 }
 
@@ -77,34 +115,41 @@ h1 strong
     color: #eaeaea;
 } */
 
+
 .hero
 {
     height: 300px;
     /* background-image: url('../images/hero.jpg'); */
     background-image: url('https://i.imgur.com/MqcfDC3.jpg');
-    background-color: #191919;
+    background-color: #252524;
     background-size: 500px 400px;
     background-repeat: no-repeat;
     background-position-x: right;
-    padding: 25px;
-    
+    display: flex;  
+    align-items: center;
+    padding: 25px
+}
 
+
+
+.projectWrapper
+{
+    border: 1px solid lightgray;
+    padding: 5px;
+    background: #252524;
+   
 }
 
 .project
 {
-    /* border-top: 10px solid red;
-    border-right: 10px solid green;
-    border-left: 10px solid orange;
-    border-bottom: 10px solid pink; */
-    /* Otra forma de colocar bordes */
-    /* border-top-color: red;
-    border-top-width: 15px;
-    border-top-style: solid; */
+
     border: 1px solid gray;
     border-radius: 10px;
-
-
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: lightgray;
+    display: flex;
 }
 
 .project_details
@@ -118,14 +163,39 @@ h1 strong
     width: 500px;
 }
 
-.header 
+.footer
 {
     background-color: #191919;
     color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header a
+.footer img
 {
-    color: white;
-    text-decoration: none; 
+    vertical-align: middle;
+    padding: 5px;
 }
+
+.footer a
+{
+    color: whitesmoke;
+}
+
+/* .flexbox
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.box
+{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px;
+    Propiedad que permite a los elementos hijos mantener sus tamaños
+    flex-shrink: 0;
+} */
