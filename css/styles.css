@@ -76,13 +76,6 @@ ol, ul
     text-decoration: none; 
 }
 
-
-/* .link
-{
-    margin: 5px;
-    flex-wrap: wrap;
-} */
-
 h1,
 h2,
 h3,
@@ -92,7 +85,8 @@ h6
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
-    color: #89623D;
+    font-weight: bold;
+ 
 }
 
 h1
@@ -109,6 +103,19 @@ h1 strong
 {
     color: #89623D
 }
+
+
+h2
+{
+    color: #89623D;
+    text-transform: uppercase;
+    font-family: Lato, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
 
 /* p
 {
@@ -127,17 +134,19 @@ h1 strong
     background-position-x: right;
     display: flex;  
     align-items: center;
-    padding: 25px
+    padding: 25px;
+    border-bottom: 1px solid lightgray;
 }
 
 
 
-.projectWrapper
+.portfolio
 {
-    border: 1px solid lightgray;
-    padding: 5px;
+    /* border: 1px solid lightgray; */
+    margin-bottom: 20px;
     background: #252524;
-   
+    align-items: center;
+    justify-content: space-between;
 }
 
 .project
@@ -145,23 +154,108 @@ h1 strong
 
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
     margin-bottom: 15px;
+    margin-left: 5px;
     padding: 15px;
     background: lightgray;
     display: flex;
+    text-align: justify;
 }
+
+.project_title
+{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project_course,
+.project_date,
+.project_url
+{
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* .project_date
+{
+    margin: 5px 0;
+} */
 
 .project_details
 {
-    width: 500px;
-    height: 200px;
+    font-size: 20px;
 }
 
 .project_imageWrapper
 {
+    padding: 25px;
     width: 500px;
 }
+
+.event_list
+{
+    display: flex;
+}
+
+
+.event
+{
+    /* border: 1px solid lightgray; */
+    border-radius: 10px;
+    margin: 5px;
+    width: 480px;
+    border-radius: 10p;
+    flex-shrink: 1;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.event_detail
+{
+    margin: 10px 20px;
+    margin-top: -40px;
+    background: #ede8e8;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.event_description
+{
+    text-align: left;
+}
+
+.event img
+{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.event_url
+{
+    border: 1px solid #89623D;
+    padding: 3px 10px;
+    text-decoration: none;
+    color: #89623D;
+    border-radius: 5px;
+}
+
+.contact
+{
+    background-color: #89623D;
+    color: whitesmoke;
+    height: 300px;
+}
+
+.contact h3
+{
+    padding: 10px;
+}
+
 
 .footer
 {
@@ -176,6 +270,7 @@ h1 strong
 {
     vertical-align: middle;
     padding: 5px;
+    padding: 0 25px;
 }
 
 .footer a
