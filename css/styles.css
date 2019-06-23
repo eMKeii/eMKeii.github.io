@@ -125,20 +125,24 @@ h2
 
 .hero
 {
-    height: 300px;
+    height: 400px;
     /* background-image: url('../images/hero.jpg'); */
-    background-image: url('https://i.imgur.com/MqcfDC3.jpg');
+    /* background-image: url('https://i.imgur.com/MqcfDC3.jpg'); */
     background-color: #252524;
-    background-size: 500px 400px;
-    background-repeat: no-repeat;
+    /* background-size: 500px 400px;
+    background-repeat: no-repeat; */
     background-position-x: right;
     display: flex;  
     align-items: center;
     padding: 25px;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
+    justify-content: space-between;
 }
 
-
+.hero_image
+{
+    object-fit: cover;
+}
 
 .portfolio
 {
@@ -152,7 +156,7 @@ h2
 .project
 {
 
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     border-radius: 10px;
     margin-bottom: 15px;
     margin-left: 5px;
@@ -167,6 +171,7 @@ h2
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: 'Fjalla One';
 }
 
 .project_course,
@@ -184,7 +189,7 @@ h2
 
 .project_details
 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .project_imageWrapper
@@ -196,6 +201,8 @@ h2
 .event_list
 {
     display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -209,6 +216,11 @@ h2
     flex-shrink: 1;
     overflow: hidden;
     background-color: lightgray;
+}
+
+.event_title
+{
+    font-family: 'Fjalla One';
 }
 
 .event_detail
@@ -232,6 +244,7 @@ h2
     width: 480px;
     height: 200px;
     object-fit: cover;
+    border-radius: 5px;
     
 }
 
@@ -248,14 +261,81 @@ h2
 {
     background-color: #89623D;
     color: whitesmoke;
-    height: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
-.contact h3
+
+.social
 {
-    padding: 10px;
+  
 }
 
+.social_link
+{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social_link.twitter
+{
+    background-image: url('../images/twitter.jpg');
+}
+
+.social_link.facebook
+{
+    background-image: url('../images/facebook.png');
+}
+
+.social_link.github
+{
+    background-image: url('../images/github.png');
+}
+
+.social_link.instagram
+{
+    background-image: url('../images/instagram.jpg');
+}
+
+.form_email
+{
+    padding: 5px;
+    
+}
+
+.form_email h3
+{
+    font-family: 'Fjalla One';
+}
+
+.form_email input
+{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px 20px 5px 25px;
+    background-image: url('../images/envelop.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+
+.form_email button
+{
+    display: block;
+    background: transparent;
+    color: whitesmoke;
+    margin-top: 10px; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100px;
+}
 
 .footer
 {
@@ -278,6 +358,17 @@ h2
     color: whitesmoke;
 }
 
+.container
+{
+    /* border: 1px solid red; */
+    width: 1400px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
 /* .flexbox
 {
     display: flex;
