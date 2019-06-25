@@ -23,6 +23,7 @@ body
     /* flex-direction: row;*/
     justify-content: space-between; 
     height: 60px;
+    flex-wrap: wrap;
 }
 
 .menu
@@ -135,6 +136,7 @@ h2
     display: flex;  
     align-items: center;
     padding: 25px;
+    flex-wrap: wrap;
     /* border-bottom: 1px solid lightgray; */
     justify-content: space-between;
 }
@@ -162,8 +164,10 @@ h2
     margin-left: 5px;
     padding: 15px;
     background: lightgray;
+    align-items: center;
     display: flex;
-    text-align: justify;
+    text-align: left;
+    flex-wrap: wrap;
 }
 
 .project_title
@@ -265,7 +269,7 @@ h2
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 
 
@@ -361,7 +365,7 @@ h2
 .container
 {
     /* border: 1px solid red; */
-    width: 1400px;
+    max-width: 1400px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -380,7 +384,7 @@ h2
 @media screen and (max-width: 768px){
     body
     {
-        border: 10px solid pink;
+        /* border: 10px solid pink; */
     }
 }
 
