@@ -296,22 +296,22 @@ h2
 
 .social_link.twitter
 {
-    background-image: url('../images/twitter.jpg');
+    background-image: url('../images/twitter.svg');
 }
 
 .social_link.facebook
 {
-    background-image: url('../images/facebook.png');
+    background-image: url('../images/facebook.svg');
 }
 
 .social_link.github
 {
-    background-image: url('../images/github.png');
+    background-image: url('../images/github.svg');
 }
 
 .social_link.instagram
 {
-    background-image: url('../images/instagram.jpg');
+    background-image: url('../images/instagram.svg');
 }
 
 .form_email
@@ -375,7 +375,7 @@ h2
     max-width: 1100px;
     /* width: 100%; */
     flex: 1;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
@@ -396,7 +396,11 @@ h2
     {
         width: auto;
     } */
- 
+    
+    .container
+    {
+        padding: 0 1em;
+    }
 
 }
 
@@ -521,12 +525,40 @@ h2
         padding: 1em;
         font-size: .8em;
     }
+
+    .contact
+    {
+        height: auto;
+        padding: 1em;
+        display: block;
+        text-align: center;
+    }
+
+    .form_email button
+    {
+        margin: 1em auto;
+    }
     
+    .form_email h3
+    {
+        margin-top: 0;
+    }
+
+    .footer
+    {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+
+    }
 }
 
 @media screen and (max-width: 320px)
 {
-    
+   .social
+   {
+       margin: -9px;
+   } 
 }
 
 
