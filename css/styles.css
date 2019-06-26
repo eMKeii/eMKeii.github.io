@@ -87,7 +87,6 @@ h6
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-weight: bold;
- 
 }
 
 h1
@@ -161,8 +160,9 @@ h2
     /* border: 1px solid gray; */
     border-radius: 10px;
     margin-bottom: 15px;
-    margin-left: 5px;
-    padding: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px ;
     background: lightgray;
     align-items: center;
     display: flex;
@@ -183,7 +183,7 @@ h2
 .project_url
 {
     margin: 5px 0;
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 /* .project_date
@@ -193,13 +193,19 @@ h2
 
 .project_details
 {
-    font-size: 15px;
+    /* font-size: 15px; */
+    width: 45%;
 }
 
 .project_imageWrapper
 {
-    padding: 25px;
-    width: 500px;
+    /* padding: 25px; */
+    width: 50%; 
+}
+
+.project_imageWrapper img
+{
+    max-width: 100%;
 }
 
 .event_list
@@ -380,6 +386,16 @@ h2
 
 @media screen and (max-width: 1024px)
 {
+    /* .project_imageWrapper
+    {
+        width: auto;
+    }
+
+    .project_details
+    {
+        width: auto;
+    } */
+ 
 
 }
 
@@ -401,15 +417,80 @@ h2
         justify-content: center;
     }
 
-    .header  .logo
+    .header .logo
     {
         text-align: center;
+    }
+
+    .portfolio h2
+    {
+        font-size: 1.2em;
+    }
+
+    .project
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .project_imageWrapper
+    {
+        width: auto;
+    }
+    
+    .project_imageWrapper img
+    {
+        max-width: 100%;
+    }
+
+    .project_details
+    {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project_course,
+    .project_date,
+    .project_url
+    {
+        margin: .3em 0;
+    }
+
+    .project_title
+    {
+        font-size: 1.2em;
+        margin-bottom: .3em; 
+    }
+
+    .project_url
+    {
+        font-size: 1em;
+    }
+
+    .project_course
+    {
+        font-size: 1em;
+    }
+    
+    .project_date
+    {
+        font-size: 1em;
+    }
+
+    .project_details
+    {
+        font-size: .8em;
     }
 
 }
 
 @media screen and (max-width: 480px)
 {
+    .project_details
+    {
+        width: auto;
+        font-size: 12px;
+    }
     
 }
 
