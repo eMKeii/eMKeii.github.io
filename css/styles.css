@@ -432,7 +432,7 @@ h2
 
 /* Desktop first: MQ se empieza desde el mas grande */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1024px)
 {  
     .portfolio
     {
@@ -597,7 +597,7 @@ h2
 
     .project_details
     {
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .event_list
@@ -665,7 +665,13 @@ h2
     .project_details
     {
         width: auto;
-        font-size: 12px;
+        font-size: 16px;
+        
+    }
+
+    .project_detail
+    {
+        text-align: left;
     }
 
     .event_detail
@@ -699,6 +705,13 @@ h2
         text-align: center;
         border: 1px solid transparent;
 
+    }
+
+    .social_link
+    {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
     }
 }
 
