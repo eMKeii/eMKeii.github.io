@@ -434,7 +434,10 @@ h2
 
 @media screen and (max-width: 1200px)
 {  
-    
+    .portfolio
+    {
+        padding: 0;
+    }
 
     .container
     {
