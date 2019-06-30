@@ -151,20 +151,29 @@
         </div>
     </footer>
     <script>
-        console.log('Hola mundo');
-        const menu = document.querySelector('.menu');
-        const burgerButton = document.querySelector('#burger_menu');
-        burgerButton.addEventListener('click', hideShow);
-
-        function hideShow()
-        {
-            if(menu.classList.contains('is_active')){
-                menu.classList.remove('is_active');
-            }else{
-                menu.classList.add('is_active');
-            }
+        
+      // console.log('Hola mundo! es mi primera linea en JS');
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu');
+      // console.log(menu);
+      const burgerButton = document.querySelector('#burger_menu');
+      // console.log(burgerButton);
+      ipad.addListener(validation)
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
         }
-
+      }
+      validation(ipad);
+      function hideShow() {
+        if (menu.classList.contains('is_active')) {
+          menu.classList.remove('is_active');
+        } else {
+          menu.classList.add('is_active');
+        }
+      }
     </script>
 </body>
 </html>
